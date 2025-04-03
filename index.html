@@ -13,24 +13,41 @@
     </style>
   </head>
   <body>
+    <div>
     <header class="header">
       <div class="clinic-name-container">
         <div class="clinic-logo">
           <img src="icons/basket.png" class="clinic-logo-img">
         </div>
         <div class="clinic-name">
-          Revive Nutrition Studio
+          <a href="#main" style="
+          text-decoration: none;
+          color: rgb(240,81,23);
+          ">Revive Nutrition Studio</a>
+         
         </div>
       </div>
       <nav class="nav">
-        <div>Philosophy</div>
-        <div>Pricing & Plans</div>
+        <div><a href="#article-1" style="
+          text-decoration: none;
+          color: black;
+          ">Philosophy</a></div>
+        <div><a href="#article-2" style="
+          text-decoration: none;
+          color: black;
+          ">Pricing & Plans</a></div>
         <div ><a target="_blank" class="youtube" href="https://www.youtube.com/@kajal590">YouTube</a></div>
-        <div>About</div>
+        <div>
+          <a href="#about" style="
+          text-decoration: none;
+          color:black;
+          ">About</a></div>
       </nav>
+      </div>
+      <div class="header-line"></div>
     </header>
 
-    <main class="main">
+    <main class="main"  id="main">
       <div class="food-picture-container">
         <img src="icons/food.jpg" class="food-picture">
       </div>
@@ -51,8 +68,151 @@
         <img src="icons/IMG20221210134944.jpg" class="doctor-picture">
       </div>
     </main>
-    <article class="article-1">
+    <div class="article-1" id="article-1">
+      <div class="philosophy-container">
+        <div class="philosophy-topic">
+          <div class="phil-span-1">Improve Your Health,</div>
+          <span class="phil-span-2">Improve Your Life</span>
+        </div>
+        <div class="philosophy-description">
+            I want to focus on improving overall health, not just weight loss. I believe that a healthy lifestyle is about more than just the number on the scale. It's about feeling good, having energy, and being able to do the things you love. I want to help you find a way of eating that works for you and your body, so you can feel your best every day.
+        </div>
+      </div>
+      <div class="philosophy-image-container">
+        <div class="philosophy-pic-1">
+          <img src="icons/runner1.jpg">
+        </div>
+        <div class="philosophy-pic-2">
+          <img src="icons/food4.jpg">
+        </div>
+        <div class="philosophy-pic-3">
+          <img src="icons/sleep1.jpg">
+        </div>
+      </div>
+    </div>
+    <article class="article-2" id="article-2">
+      <div class="services">
+        Services
+      </div>
+      <div class="horizontal-line"></div>
+      <div class="article-2-flexbox">
+        
+        <div class="online-consultation">
+          Online
+          <div class="consultation-details">
+            <div>
+              Initial Consultation
+            </div>
+            <div class="consultation-fee">
+              <div>
+                30 mins
+              </div>
+              <div>
+                Free
+              </div>
+            </div>
+            <div>
+              <button class="session-button">
+                Book Now
+              </button>
+            </div>
+          </div>
+          <div class="horizontal-line width-max"></div>
+          <div class="consultation-details">
+            <div>
+              Follow-Up
+            </div>
+            <div class="consultation-fee">
+              <div>
+                1hr
+              </div>
+              <div>
+                Rs.500
+              </div>
+            </div>
+            <div>
+              <button class="session-button">
+                Book Now
+              </button>
+            </div>
+          </div>
+          
+        </div>
+        <!-- <div class="vertical-line"></div> -->
+        
+        <div class="offline-consultation">
+          Offline
+          <div class="consultation-details">
+            <div>
+              Initial Consultation
+            </div>
+            <div class="consultation-fee">
+              <div >
+                30 mins
+              </div>
+              <div>
+                Free
+              </div>
+            </div>
+            <div>
+              <button class="session-button">
+                Book Now
+              </button>
+            </div>
+          </div>
+          <div class="horizontal-line width-max"></div>
+          <div class="consultation-details">
+            <div>
+              Follow-Up
+            </div>
+            <div class="consultation-fee">
+              <div>
+                1hr
+              </div>
+              <div>
+                Rs.500
+              </div>
+            </div>
+            <div>
+              <button class="session-button">
+                Book Now
+              </button>
+            </div>
+          </div>
+        </div>
+       </div>
       
+
+    </article>
+    <article class="about-section" id="about">
+      <div class="contact-us"><span class="heading-text">Contact Us:</span><br>Phone: 9876543210<br> Email:revive-nutrition@gmail.com</div>
+      <div class="address"> 
+        <div><span class="heading-text">Address:</span> <br>Shishu Mangalam<br>Mithapur<br>Patna </div>
+        <div class="maps">
+        <a href="https://maps.app.goo.gl/dnZkFtu7iJLWtg7LA" target="_blank">
+            <img src="icons/icons8-google-maps.svg" class="maps-icon">
+        </a>
+      </div>
+    </div>
+      <div class="follow"><span class="heading-text">Follow Us:</span> 
+        <div class="follow-icons">
+        <div class="insta">
+          <a href="https://www.instagram.com/kajal.suman?igsh=bzFzcWlscW4yMWlv" target="_blank">
+              <img src="icons/icons8-instagram.svg" class="insta-icon">
+          </a>
+        </div>
+        <div class="twitter">
+          <a href="https://www.instagram.com/sshresthh/" target="_blank">
+            <img src="icons/icons8-twitter.svg" class="twitter-icon">
+        </a>
+        </div>
+      <div class="linkedin">
+        <a href="https://www.linkedin.com/in/kajal-suman-bbb6a215?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank">
+          <img src="icons/icons8-linkedin.svg" class="linkedin-icon">
+        </a>
+      </div>
+    </div>
+    </div>
     </article>
 
     <script>
