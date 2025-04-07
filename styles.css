@@ -566,7 +566,7 @@ body{
 
 }
 
-@media (max-width: 320px){
+@media (max-width: 425px){
   .article-1{
     flex-wrap: nowrap;
   }
