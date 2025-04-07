@@ -8,6 +8,13 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
+    <!-- Calendly link widget begin -->
+<link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">
+<script src="https://assets.calendly.com/assets/external/widget.js" type="text/javascript"></script>
+
+
+<!-- Calendly link widget end -->
+
     <style>
            
     </style>
@@ -37,7 +44,7 @@
           color: black;
           ">Pricing & Plans</a></div>
         <div ><a target="_blank" class="youtube" href="https://www.youtube.com/@kajal590">YouTube</a></div>
-        <div>
+        <div class="about-button">
           <a href="#about" style="
           text-decoration: none;
           color:black;
@@ -60,9 +67,10 @@
           Dr. Kajal <br>
           <i>PGD in Nutrition and <br>Dietics</i>
         </div>
-        <button class="session-button">
-          Book a Session
+        <button class="session-button" onclick="Calendly.initPopupWidget({url: 'https://calendly.com/your-username/event'}); return false;">
+          Book a session
         </button>
+        
       </div>
       <div class="doctor-picture-container">
         <img src="icons/IMG20221210134944.jpg" class="doctor-picture">
@@ -96,7 +104,7 @@
       </div>
       <div class="horizontal-line"></div>
       <div class="article-2-flexbox">
-        
+      <div class="online">
         <div class="online-consultation">
           Online
           <div class="consultation-details">
@@ -112,7 +120,7 @@
               </div>
             </div>
             <div>
-              <button class="session-button">
+              <button class="session-button button-next" id="online-initial">
                 Book Now
               </button>
             </div>
@@ -131,15 +139,16 @@
               </div>
             </div>
             <div>
-              <button class="session-button">
+              <button class="session-button button-next" id="online-followup">
                 Book Now
               </button>
             </div>
           </div>
           
         </div>
+      </div>
         <!-- <div class="vertical-line"></div> -->
-        
+        <div class="offline">
         <div class="offline-consultation">
           Offline
           <div class="consultation-details">
@@ -155,7 +164,7 @@
               </div>
             </div>
             <div>
-              <button class="session-button">
+              <button class="session-button button-next" id="offline-initial">
                 Book Now
               </button>
             </div>
@@ -174,9 +183,13 @@
               </div>
             </div>
             <div>
-              <button class="session-button">
-                Book Now
-              </button>
+              
+              
+                <button class="session-button button-next" id="offline-followup">
+                  Book Now
+                </button>
+            
+              </div>
             </div>
           </div>
         </div>
@@ -214,9 +227,12 @@
     </div>
     </div>
     </article>
+    
+    <script src="script.js">
 
-    <script>
 
     </script>
+
+    
   </body>
 </html>
